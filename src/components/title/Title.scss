@@ -1,0 +1,13 @@
+@import '/src/styles/vars.scss';
+
+.title {
+    display: block;
+    
+    width: 100%;
+    
+    border-bottom: 2px solid $color-black;
+
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

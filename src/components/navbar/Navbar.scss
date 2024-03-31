@@ -1,0 +1,32 @@
+@import '/src/styles/vars.scss';
+
+.navbar {
+    &__items {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &__item {
+        a {
+            color: $color-white;
+            font-size: 18px;
+            font-weight: 700;
+            &:hover{
+                color: $color-white;
+                text-decoration: underline;
+                text-underline-offset: 18%;
+            } 
+        }
+        span {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+        &_withIcon {
+            a {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '/src/styles/vars.scss';
+
+.promo {
+    margin-bottom: 140px;
+    &__container {
+        display: flex;
+        gap: 96px;
+    }        
+    &__title {
+        font-size: 38px;
+        line-height: 38px;
+        font-weight: 400;
+    }
+    &__devider {
+        margin-bottom: 24px;
+        position: relative;
+        width: 578px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        div {
+            width: 100%;
+            border-top: 2px solid $color-black;
+        }
+        span {
+            text-align: right;
+        }
+    }
+    &__subtitle {
+        margin-bottom: 16px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__item {
+        a {
+            display: block;
+            width: fit-content;
+            padding: 6px 24px;
+    
+            border: 2px solid $color-black;
+            border-radius: 4px;
+            
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $color-black;
+        }
+    }
+}

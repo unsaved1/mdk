@@ -1,0 +1,18 @@
+.section {
+    margin-bottom: 140px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
+    &__contentItem {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Roboto';
+    }
+}
