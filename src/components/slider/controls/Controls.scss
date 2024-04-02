@@ -1,11 +1,12 @@
-.controls {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    z-index: 10;
+@import '/src/styles/vars.scss';
+@import '/src/styles/mixins.scss';
 
+.controls {
     display: flex;
     gap: 6px;
+    @include below($lg) {
+        display: none;
+    }
     &__button {
         background: none;
         border: none;

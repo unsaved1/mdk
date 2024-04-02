@@ -1,14 +1,24 @@
+@import '/src/styles/vars.scss';
+@import '/src/styles/mixins.scss';
+
 .section {
     margin-bottom: 140px;
+    @include below($lg) {
+        margin-bottom: 80px;
+    }
     &__container {
         display: flex;
         flex-direction: column;
         gap: 35px;
+        @include below($lg) {
+            gap: 24px;
+        }
     }
     &__content {
         display: flex;
         flex-direction: column;
         gap: 26px;
+        color: $color-black;
     }
     &__contentItem {
         font-size: 16px;

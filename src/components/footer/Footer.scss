@@ -1,10 +1,15 @@
 @import "/src/styles/vars.scss";
+@import "/src/styles/mixins.scss";
 
 .footer {
     height: 300px;
 
     background: $color-black;
     color: $color-white;
+    @include below($lg) {
+        height: 240px;
+        padding: 46px 0;
+    }
     &__container {
         width: 100%;
         height: 100%;
@@ -12,6 +17,24 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include below($lg) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__title {
+        font-size: 32px;
+    }
+    &__nav {
+        ul {
+            gap: 14px;
+        }
+        a {
+            font-size: 14px;
+        }
+        .navbar__item_withIcon a {
+            flex-direction: row-reverse;
+        }
     }
     &__socials {
         display: flex;

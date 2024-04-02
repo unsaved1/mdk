@@ -11,8 +11,8 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container container">
-                <h2 className="header__title">Мы помним</h2>
-                <Navbar />
+                <h2 className="footer__title">Мы помним</h2>
+                <Navbar className="footer__nav"/>
                 <ul className="footer__socials">
                     <li className="footer_socialIcon">
                         <a href="#">

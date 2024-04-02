@@ -9,7 +9,7 @@ export const Promo = () => {
                     <img src={photo} alt="photo" />
                 </div>
                 <div className="promo__info">
-                    <h2 className="promo__title">белов андрей сергеевич</h2>
+                    <h2 className="promo__title"><span>белов</span> андрей сергеевич</h2>
                     <div className="promo__devider">
                         <div></div>
                         <span>XX.XX.XXXX – xx.xx.xxxx</span>

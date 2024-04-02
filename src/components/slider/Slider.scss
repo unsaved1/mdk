@@ -1,19 +1,61 @@
-@import '/src/styles/vars.scss';
+@import "/src/styles/vars.scss";
+@import "/src/styles/mixins.scss";
 
 .slider {
     position: relative;
     width: 710px;
+    @include below($lg) {
+        width: 100%;
+    }
+
     &__swiper {
         margin: 0;
-        height: 480px;
+        height: calc(100% + 50px);
         width: inherit;
         .swiper-wrapper {
             height: fit-content;
         }
     }
+    &__modules {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        @include below($lg) {
+            padding-top: 30px;
+        }
+    }
+    &__navigation {
+        display: flex;
+        align-items: center;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        color: $color-black;
+        @include below($lg) {
+            display: none;
+        }
+    }
     &__slide {
+        position: relative;
         cursor: pointer;
         width: 710px;
+        height: auto;
+        overflow: hidden;
+        video {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform: scale(104%);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include below($lg) {
+            width: 100%;
+        }
     }
     &__desc {
         padding: 0 10px;
@@ -21,12 +63,34 @@
 
         display: flex;
         align-items: center;
-        
+
         background: $color-black;
-        
+
         font-size: 16px;
         font-weight: 400;
         line-height: normal;
         color: $color-white;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        gap: 4px;
+    }
+
+    .swiper-pagination-bullet {
+        display: block;
+        width: 6px;
+        height: 6px;
+        
+        border-radius: 50%;
+        background: gray;
+    }
+    .swiper-pagination-bullet-active {
+        background: #000;
     }
 }
