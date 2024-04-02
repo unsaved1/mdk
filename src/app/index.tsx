@@ -13,7 +13,7 @@ import "./App.css";
 
 function App() {
     return (
-        <>
+        <main>
             <Header />
             <Promo />
             <Section id="archive" title="фотоархив">
@@ -60,7 +60,7 @@ function App() {
                 <img id="qr-img" src={qrImg} alt="qr code" />
             </Section>
             <Footer />
-        </>
+        </main>
     );
 }
 

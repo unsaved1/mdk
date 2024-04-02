@@ -35,6 +35,14 @@ li {
     list-style: none;
 }
 
+#root {
+    background: url('/bg.png') center center / cover no-repeat;
+}
+
+main {
+    background: rgba($color-white, 0.45);
+}
+
 .container {
     max-width: 1074px;
     margin: 0 auto;
