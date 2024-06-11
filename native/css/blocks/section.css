@@ -1,0 +1,31 @@
+.section {
+    margin-bottom: 140px;
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    color: var(--color-black);
+}
+
+.section__contentItem {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+@media screen and (max-width: 1124px) {
+    .section {
+        margin-bottom: 80px;
+    }
+    .section__container {
+        gap: 24px;
+    }
+}

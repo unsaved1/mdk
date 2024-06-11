@@ -1,0 +1,64 @@
+@import "./_bootstrap-reboot.min.css";
+@import "./fonts.css";
+@import "./vars.css";
+
+@import "./blocks/header.css";
+@import "./blocks/navbar.css";
+@import "./blocks/promo.css";
+@import "./blocks/section.css";
+@import "./blocks/footer.css";
+@import "./blocks/swiper.css";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#qr-img {
+    width: 200px;
+    height: 200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+#root {
+    background: url('/bg.png') center center / cover no-repeat;
+}
+
+.container {
+    max-width: 1074px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        max-width: unset;
+        padding: 0 30px;
+    }
+}

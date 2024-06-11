@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Главная</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body>
+        <main>
+            <header class="header">
+                <div class="header__container container">
+                    <h1 class="header__title">Мы помним</h1>
+                    <nav class="navbar__nav">
+                        <ul class="navbar__items">
+                            <li class="navbar__item">
+                                <a href="#">проекты</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#">новости</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#">история</a>
+                            </li>
+                            <li class="navbar__item navbar__item_withIcon">
+                                <a href="#">
+                                    <img src="./assets/heart.svg" alt="heart" />
+                                    <span>пожертвовать</span>
+                                </a>
+                            </li>
+                            <li class="navbar__item navbar__item_withIcon">
+                                <a href="#">
+                                    <img src="./assets/search.svg" alt="search" />
+                                    <span>поиск</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__search">
+                        <img src="./assets/search.svg" alt="search" />
+                    </div>
+                    <div class="header__menu">
+                        <img src="./assets/menu.svg" alt="menu" />
+                    </div>
+                </div>
+            </header>
+            <section class="promo">
+                <div class="promo__container container">
+                    <div class="promo__photo">
+                        <img src="./assets/mainPhoto.jpg" alt="photo" />
+                    </div>
+                    <div class="promo__info">
+                        <h2 class="promo__title"><span>белов</span> андрей сергеевич</h2>
+                        <div class="promo__devider">
+                            <div></div>
+                            <span>XX.XX.XXXX – xx.xx.xxxx</span>
+                        </div>
+                        <div class="promo__subtitle">мемориальная страница</div>
+                        <ul class="promo__items">
+                            <li class="promo__item">
+                                <a href="#archive">фотоархив</a>
+                            </li>
+                            <li class="promo__item">
+                                <a href="#biography">биография</a>
+                            </li>
+                            <li class="promo__item">
+                                <a href="#memories">воспоминания близких</a>
+                            </li>
+                            <li class="promo__item">
+                                <a href="#words">слова памяти</a>
+                            </li>
+                            <li class="promo__item">
+                                <a href="#grave-place">место захоронения</a>
+                            </li>
+                            <li class="promo__item">
+                                <a href="#relatives-pages">родственные страницы</a>
+                            </li>
+                            <li class="promo__item">
+                                <a href="#links">ссылки</a>
+                            </li>
+                            <li class="promo__item">
+                                <a href="#qr-code   ">qr-код</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container container">
+                    <h2 class="title">фотоархив</h2>
+                    <div class="section__content">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/sliderPhoto.jpg" alt="image: 1" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/sliderPhoto2.jpg" alt="image: 2" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/sliderPhoto3.jpg" alt="image: 3" />
+                                </div>
+                            </div>
+                            <p className="slider__navigation">
+                                <span id="currentPage"></span>/<span id="totalPages"></span>
+                            </p>
+                            <div class="swiper-pagination"></div>
+                            <div class="controls">
+                                <button class="controls__button controls__button_prev">
+                                    <img src="./assets/arrow.svg" alt="prev" />
+                                </button>
+                                <button class="controls__button controls__button_next">
+                                    <img src="./assets/arrow.svg" alt="next" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container container">
+                    <h2 class="title">биография</h2>
+                    <div class="section__content">
+                        <p class="section__contentItem">
+                            Биография может содержать сведения из жизни человека, такие как: место рождения,
+                            происхождение, семейные отношения, учеба, образование, служба, работа, обстоятельства
+                            смерти.
+                        </p>
+                        <p class="section__contentItem">
+                            Вы так же можете описать яркие, важные или переломные моменты в жизни, достижения, их
+                            хронологию и географию.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container container">
+                    <h2 class="title">воспоминания близких</h2>
+                    <div class="section__content">
+                        <p class="section__contentItem">
+                            Вы сможете поделиться своими воспоминаниями о человеке, воспоминаниями близких людей,
+                            сослуживцев или коллег.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container container">
+                    <h2 class="title">слова памяти</h2>
+                    <div class="section__content">
+                        <p class="section__contentItem">
+                            Вы сможете оставить памятные слова от родных и близких людей.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container container">
+                    <h2 class="title">место захоронения</h2>
+                    <div class="section__content">
+                        <p class="section__contentItem">
+                            Вы сможете указать место захоронения (название кладбища, адрес, место, дополнительную
+                            информацию или координаты)
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container container">
+                    <h2 class="title">родственные страницы</h2>
+                    <div class="section__content">
+                        <p class="section__contentItem">
+                            Вы сможете добавить ссылки на связанные (родственные) Мемориальные страницы.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container container">
+                    <h2 class="title">ссылки</h2>
+                    <div class="section__content">
+                        <p class="section__contentItem">
+                            Вы сможете добавить до 3-х ссылок на другие источники информации о человеке.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container container">
+                    <h2 class="title">qr-код страницы</h2>
+                    <div class="section__content">
+                        <img id="qr-img" src="./assets/qr.jpg" alt="qr code" />
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__container container">
+                    <h2 class="footer__title">Мы помним</h2>
+                    <Navbar class="footer__nav" />
+                    <ul class="footer__socials">
+                        <li class="footer_socialIcon">
+                            <a href="#">
+                                <img src="./assets/phone.svg" alt="phone" />
+                            </a>
+                        </li>
+                        <li class="footer_socialIcon">
+                            <a href="#">
+                                <img src="./assets/youtube.svg" alt="youtube" />
+                            </a>
+                        </li>
+                        <li class="footer_socialIcon">
+                            <a href="#">
+                                <img src="./assets/telegram.svg" alt="telegram" />
+                            </a>
+                        </li>
+                        <li class="footer_socialIcon">
+                            <a href="#">
+                                <img src="./assets/vk.svg" alt="vk" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+        <script type="module">
+            import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+            const currentPage = document.querySelector("#currentPage");
+            const totalPages = document.querySelector("#totalPages");
+
+            const swiper = new Swiper(".swiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                navigation: {
+                    nextEl: ".controls__button_next",
+                    prevEl: ".controls__button_prev",
+                },
+            });
+
+            currentPage.textContent = swiper.activeIndex + 1;
+            totalPages.textContent = swiper.slides.length;
+
+            swiper.on("slideChange", () => (currentPage.textContent = swiper.activeIndex + 1));
+        </script>
+    </body>
+</html>

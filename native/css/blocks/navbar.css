@@ -1,0 +1,28 @@
+.navbar__items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar__item span {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.navbar__item a {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar__item a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+    text-underline-offset: 18%;
+}
+
+.navbar__item_withIcon a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
