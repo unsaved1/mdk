@@ -1,6 +1,7 @@
 @import "./_bootstrap-reboot.min.css";
 @import "./fonts.css";
 @import "./vars.css";
+@import "./swiper.min.css";
 
 @import "./blocks/header.css";
 @import "./blocks/navbar.css";
@@ -8,6 +9,8 @@
 @import "./blocks/section.css";
 @import "./blocks/footer.css";
 @import "./blocks/swiper.css";
+
+
 
 * {
     margin: 0;

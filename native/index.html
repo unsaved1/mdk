@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Главная</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/index.css" />
     </head>
     <body>
@@ -101,8 +100,14 @@
                                 <div class="swiper-slide">
                                     <img src="./assets/sliderPhoto3.jpg" alt="image: 3" />
                                 </div>
+                                <!-- <div class="swiper-slide">
+                                    <video src="/video.mp4" autoplay muted controls></video>
+                                </div> -->
                             </div>
-                            <p className="slider__navigation">
+                            <div class="swiper__desc">
+                                <p>Фотография из семейного архива</p>
+                            </div>
+                            <p class="swiper__navigation">
                                 <span id="currentPage"></span>/<span id="totalPages"></span>
                             </p>
                             <div class="swiper-pagination"></div>
@@ -224,7 +229,7 @@
             </footer>
         </main>
         <script type="module">
-            import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+            import Swiper from "./swiper.min.js";
 
             const currentPage = document.querySelector("#currentPage");
             const totalPages = document.querySelector("#totalPages");

@@ -5,7 +5,6 @@
 }
 .swiper-wrapper {
     position: relative;
-    padding-bottom: 50px;
 }
 .swiper .swiper-pagination {
     bottom: 0;
@@ -19,6 +18,22 @@
 
 .swiper .swiper-pagination-bullet-active {
     background: var(--color-black);
+}
+
+.swiper__desc {
+    margin-bottom: 30px;
+    padding: 0 10px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    background: var(--color-black);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-white);
 }
 
 .controls {
@@ -52,8 +67,14 @@
     height: 100%;
 }
 
+.swiper .swiper-slide video{
+    width: 100%;
+    height: 422px;
+
+}
+
 @media screen and (max-width: 1124px) {
-    .controls {
+    .controls, .swiper__navigation {
         display: none;
     }
 }
