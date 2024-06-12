@@ -18,6 +18,10 @@
     font-size: 32px;
 }
 
+.footer__nav {
+    display: flex;
+}
+
 .footer__nav ul {
     gap: 14px;
 }

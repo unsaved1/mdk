@@ -50,8 +50,21 @@ li {
     list-style: none;
 }
 
-main {
+body {
     background: url('../assets/bg.png') center center / cover no-repeat;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.title {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .container {
