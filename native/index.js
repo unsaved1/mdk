@@ -1,19 +1,13 @@
-import Swiper from "swiper";
+"use strict";
 
-const currentPage = document.querySelector("#currentPage");
-const totalPages = document.querySelector("#totalPages");
+const mobileMenu = document.querySelector(".mobileMenu");
+const closeBtn = document.querySelector(".mobileMenu__close");
+const openBtn = document.querySelector(".header__menu");
 
-const swiper = new Swiper(".swiper", {
-    pagination: {
-        el: ".swiper-pagination",
-    },
-    navigation: {
-        nextEl: ".controls__button_next",
-        prevEl: ".controls__button_prev",
-    },
+openBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("mobileMenu_opened");
 });
 
-currentPage.textContent = swiper.activeIndex + 1;
-totalPages.textContent = swiper.slides.length;
-
-swiper.on("slideChange", () => (currentPage.textContent = swiper.activeIndex + 1));
+closeBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("mobileMenu_opened");
+});

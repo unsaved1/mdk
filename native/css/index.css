@@ -4,6 +4,7 @@
 @import "./swiper.min.css";
 
 @import "./blocks/header.css";
+@import "./blocks/mobileMenu.css";
 @import "./blocks/navbar.css";
 @import "./blocks/promo.css";
 @import "./blocks/section.css";
@@ -49,8 +50,8 @@ li {
     list-style: none;
 }
 
-#root {
-    background: url('/bg.png') center center / cover no-repeat;
+main {
+    background: url('../assets/bg.png') center center / cover no-repeat;
 }
 
 .container {
@@ -58,7 +59,7 @@ li {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1124px) {
     .container {
         width: 100%;
         max-width: unset;

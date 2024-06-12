@@ -1,0 +1,43 @@
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100%;
+    transform: translate(100%);
+    background: var(--color-black);
+
+    display: flex;
+    justify-content: center;
+    padding-top: 40%;
+    transition: 0.2s;
+}
+
+.mobileMenu_opened {
+    transform: translate(0);
+}
+
+.mobileMenu__close {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+}
+
+.mobileMenu__close span:last-child {
+    transform: translateY(-1px) rotate(45deg);
+}
+
+.mobileMenu__nav {
+    display: flex;
+}
+
+.mobileMenu__nav ul {
+    flex-direction: column;
+}
